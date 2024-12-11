@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Standard Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
+    <script src="comfyui-p5-helper.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Beauty Standard Generator</h1>
+    </header>
+    <main>
+      <div id="canvas-buttons-container">
+        <div id="canvas-container">
+          <div id="sketch-container">
+            <canvas id="sketch"></canvas>
+          </div>
+        </div>
+      <p class="instruction">
+        Upload your best picture, or try multiple pictures, and explore global beauty standards as many times as you like!
+      </p>
+      <div id="action-buttons-container">
+        <input type="file" id="file-input-button"  accept="image/*" />
+      </div>
+
+      <p class="instruction">
+        Now choose a beauty standard.
+      </p>
+        <div id="beauty-standards-container">
+          <button id="middle-eastern">Middle Eastern</button>
+          <button id="chinese">Chinese</button>
+          <button id="south-korean">South Korean</button>
+          <button id="latina">Latina</button>
+          <button id="nigerian">Nigerian</button>
+          <button id="western">Western</button>
+        </div>      
+        <p class="instruction">
+          Now generate! (You can do this as many times you like)
+        </p> 
+        <div id="action-buttons-container">
+          <button id="generate-button">Start Generating</button>
+        </div>
+
+      </div>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
